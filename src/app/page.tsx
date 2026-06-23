@@ -187,7 +187,7 @@ export default function Home() {
         <section className="technical-pane">
           <header className="intro-panel" id="home">
             <p className="pane-label">Technical side</p>
-            <h2>Market Research | Analytics | Growth Marketing | SEO | Paid Media</h2>
+            <h2>Market Research · Analytics · Growth Marketing · SEO · Paid Media</h2>
             <p>
               It&apos;s so nice to see you here. I&apos;m Shivani, born in Mumbai and based in Brooklyn. As you lay witness to my technical skills, emotional intelligence, people observation, and critical thinking, you&apos;ll also see the soft-skill pleasures that shape how I work.
             </p>
@@ -195,7 +195,7 @@ export default function Home() {
               My mundane side quests include writing, lifting weights, making people laugh, and meal-prepping a high-protein, high-fiber diet for the week. As a fellow empath, my daily mantra is &quot;happiness is only real when shared, but pain, diminished.&quot; I identify pain points professionally and personally, speak three languages, and bring Gen Z energy into conversation with a millennial sense of justice.
             </p>
             <div className="resume-actions">
-              <a href={resumeLink} target="_blank">Click here for my resume</a>
+              <a href={resumeLink} target="_blank">Resume</a>
               <a href="mailto:Shivani.thali@gmail.com">Gmail</a>
               <a href="https://linkedin.com/in/shivani-thali" target="_blank">LinkedIn</a>
             </div>
