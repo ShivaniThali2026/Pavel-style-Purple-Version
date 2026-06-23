@@ -3,9 +3,10 @@
 import { useMemo, useState } from "react";
 
 const assetBase = "/Pavel-style-Purple-Version";
+const resumeLink = `${assetBase}/resume/shivani-thali-resume-2026-06-03.pdf`;
 
 const metrics = [
-  { value: "3%", label: "CTR lift", detail: "SEO, A/B testing, and landing page improvements" },
+  { value: "5%", label: "CTR lift", detail: "SEO, landing page optimization, and A/B testing" },
   { value: "33%", label: "Contract growth", detail: "Proposal strategy and bid support" },
   { value: "37%", label: "Revenue growth", detail: "Business development contribution" },
   { value: "30+", label: "Projects managed", detail: "Public and private sector client operations" },
@@ -19,7 +20,7 @@ const caseStudies = [
     problem:
       "A small consultancy was competing against larger firms for public and private sector contracts without a dedicated business development team.",
     approach:
-      "Shivani built the RFQ/RFP workflow from opportunity research to final collateral, coordinating engineering inputs and shaping clear decision-maker materials.",
+      "I built the RFQ/RFP workflow from opportunity research to final collateral, coordinating engineering inputs and shaping clear decision-maker materials.",
     result: "33% increase in contract acquisitions, 37% revenue growth, and 3 contracts won over two years.",
     tools: ["InDesign", "Canva", "Microsoft Office", "Agency Research"],
   },
@@ -30,9 +31,9 @@ const caseStudies = [
     problem:
       "The company had limited organic visibility and underperforming click-through performance in a competitive NYC B2B market.",
     approach:
-      "She refined landing pages, supported keyword-led content, tested email and page variations, and tracked performance in GA4.",
-    result: "3% CTR lift and 9% growth in organic site engagement.",
-    tools: ["SEMrush", "WordPress", "GA4", "Reachmail", "Excel"],
+      "I refined landing pages, supported keyword-led content, tested email and page variations, and tracked performance in GA4.",
+    result: "5% CTR lift through SEO, landing page optimization, and A/B testing.",
+    tools: ["SEMrush", "WordPress", "GA4", "Tableau", "HubSpot", "Excel"],
   },
   {
     number: "03",
@@ -41,7 +42,7 @@ const caseStudies = [
     problem:
       "The firm had no consistent social voice, email rhythm, or polished collateral beyond a basic website.",
     approach:
-      "Shivani created LinkedIn and email calendars, content pillars, capability statements, trade show assets, and industry event support.",
+      "I created LinkedIn and email calendars, content pillars, capability statements, trade show assets, and industry event support.",
     result: "A consistent brand presence across LinkedIn, email, collateral, and in-person channels.",
     tools: ["LinkedIn", "Reachmail", "Mailchimp", "Canva", "InDesign", "GA4"],
   },
@@ -52,7 +53,7 @@ const caseStudies = [
     problem:
       "A growing consultancy needed structure across overlapping deadlines, invoices, reports, deliverables, and client communication.",
     approach:
-      "She built Excel tracking systems, translated technical updates into client-facing language, and supported retention through proactive follow-up.",
+      "I built Excel tracking systems, translated technical updates into client-facing language, and supported retention through proactive follow-up.",
     result: "30+ concurrent projects managed with consistent communication and deadline visibility.",
     tools: ["Excel", "Outlook", "Qualtrics", "HubSpot", "Salesforce"],
   },
@@ -63,25 +64,25 @@ const academicProjects = [
     eyebrow: "UX Strategy · GTM",
     title: "InternConnect",
     description:
-      "A student-focused platform concept exploring internship access, user journeys, audience targeting, and go-to-market positioning.",
+      "An app concept and marketing plan for international students, built around mentorship, visa guidance, career resources, user research, and integrated campaign planning.",
     tools: ["Figma", "Personas", "Journey Mapping", "GTM Strategy"],
-    link: "https://docs.google.com/presentation/d/1kIAiJxq0WnKcqnDMS7j-Cy_snmmy_XV5/edit?usp=sharing",
+    link: `${assetBase}/projects/internconnect.pdf`,
   },
   {
     eyebrow: "Digital Marketing",
     title: "Fashion Nova Campaign",
     description:
-      "A consumer-brand project focused on influencer strategy, digital behavior, audience segmentation, and social campaign direction.",
-    tools: ["Social Strategy", "Influencer Marketing", "Consumer Insights"],
-    link: "https://docs.google.com/presentation/d/1JdwyFX1hwFJwBFcWMw04VG1_H-WKtE4mZ16Ln2nTxMo/edit?usp=sharing",
+      "A digital marketing strategy project for a fast-fashion brand, focused on SEM, SEO, paid search, Amazon ads, audience behavior, and social campaign direction.",
+    tools: ["SEM", "SEO", "Paid Search", "Influencer Marketing", "Consumer Insights"],
+    link: `${assetBase}/projects/fashion-nova.pdf`,
   },
   {
     eyebrow: "Marketing Analytics",
     title: "Boxed.com Strategy",
     description:
-      "A strategy project using research, analytics thinking, ROI budgeting, and campaign recommendations to identify growth opportunities.",
-    tools: ["Excel", "Google Analytics", "Market Research", "ROI Modeling"],
-    link: "",
+      "An integrated marketing strategy for Boxed.com using market research, campaign planning, direct mail, email marketing, ROI thinking, and brand relaunch recommendations.",
+    tools: ["Market Research", "Integrated Marketing", "Email Marketing", "ROI Planning"],
+    link: `${assetBase}/projects/boxed-final-ppt.pdf`,
   },
 ];
 
@@ -101,8 +102,8 @@ const photos = [
 ];
 
 const toolGroups = [
-  ["Analytics & CRM", ["GA4", "Tableau", "HubSpot", "Salesforce", "Excel", "Qualtrics"]],
-  ["Growth Marketing", ["SEO", "SEMrush", "Reachmail", "Mailchimp", "WordPress", "A/B Testing"]],
+  ["Analytics & CRM", ["GA4", "Tableau", "HubSpot Marketing Hub", "Salesforce", "Excel", "Qualtrics", "IBM SPSS"]],
+  ["Growth Marketing", ["SEO", "Paid Media", "SEMrush", "Reachmail", "Mailchimp", "WordPress", "A/B Testing"]],
   ["Creative Production", ["InDesign", "Canva", "Photoshop", "Sony Vegas Pro", "DSLR Photography"]],
   ["Client Operations", ["Project Tracking", "Stakeholder Updates", "Client Surveys", "Follow-Up Systems"]],
   ["Campaign Systems", ["LinkedIn Calendars", "Mailchimp", "Reachmail", "Content Pillars"]],
@@ -158,14 +159,14 @@ export default function Home() {
         </a>
 
         <p className="hero-copy">
-          Bridging marketing strategy, analytics, proposal development, client communication,
-          and creative storytelling for growth-focused marketing work.
+          I connect market research, analytics, growth marketing, SEO, paid media, proposal strategy,
+          and creative storytelling into practical systems for B2B and public-sector work.
         </p>
 
         <div className="current-card">
           <span>Portfolio Focus</span>
-          <strong>Marketing Strategy · Digital Campaigns · Creative Growth</strong>
-          <p>SEO · proposal strategy · campaign systems · client operations · visual storytelling</p>
+          <strong>Market Research · Analytics · Growth Marketing · SEO · Paid Media</strong>
+          <p>Proposal strategy · campaign systems · client operations · visual storytelling</p>
         </div>
 
         <div className="hero-profile" aria-label="Portrait of Shivani Thali">
@@ -186,7 +187,7 @@ export default function Home() {
       <section id="work" className="section-block compact-section">
         <SectionHeader
           title="Professional Case Studies"
-          subtitle="Business problems, marketing systems, and measurable outcomes from Shivani’s professional work."
+          subtitle="Business problems, marketing systems, and measurable outcomes from my professional work."
         />
 
         <div className="case-study-grid">
@@ -220,7 +221,7 @@ export default function Home() {
               <p>{project.description}</p>
               <TagList items={project.tools} />
               {project.link ? (
-                <a href={project.link} target="_blank">Open Project ›</a>
+                <a href={project.link} target="_blank">Open PDF ›</a>
               ) : (
                 <span className="muted-link">Strategy project</span>
               )}
@@ -297,6 +298,7 @@ export default function Home() {
         </p>
 
         <div className="contact-buttons">
+          <a href={resumeLink} target="_blank">View Resume</a>
           <a href="mailto:Shivani.thali@gmail.com">Email Shivani</a>
           <a href="https://linkedin.com/in/shivani-thali" target="_blank">LinkedIn</a>
         </div>
