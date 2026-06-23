@@ -236,7 +236,7 @@ export default function Home() {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <TagList items={project.tools} />
-                <a href={project.link} target="_blank">Open PDF</a>
+                <a href={project.link} target="_blank">Click to know more</a>
               </article>
             ))}
           </div>
